@@ -14,4 +14,7 @@ const nextConfig = {
   // 如果应用有API路由，需要考虑替代方案
 };
 
-module.exports = nextConfig;
+module.exports = {
+  output: 'export', // 强制静态导出
+  distDir: 'out'    // 指定输出目录为 out（默认是 .next）
+};
